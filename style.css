@@ -1,0 +1,258 @@
+/* --styles the body of the html ------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+	width:100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color:darkred;
+    color: white;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: darkred;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+	position: fixed;
+	top:0px;
+	left:0px;
+	 width: 100%;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+
+/*color is updated to very light grey to adjust for accessbility red it's a cool color--*/
+.logo {
+  font-family: Times New Roman, Georgia,serif;
+  font-size: 72px;
+  color: #000000;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0 0 0;
+}
+
+
+/* ---  Styles for navigation--- */
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/* --- styles the navigation headers--*/
+header nav ul {
+  display: flex;
+  flex-direction: center;
+  padding-bottom: 0;
+}
+/*styling for header types*/
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #000;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+  font-family: arial,verdana, sans-serif;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+}
+
+}
+/*for the next section i want it to also have that really cool chryslergarnet red--*/
+section.dark-background {   
+  background-color: #CDCDCD;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin: 80px 0;
+}
+/*the footer to keep things streamlined should also have the chrysler garnet red--*/
+footer {
+  background-color: #CDCDCD;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+/* ---  The styling for headers, and general paragraphs --- */
+/*--went with sans-serif fonts since they are easier on the eyes--*/
+/* -- also pertaining to aethstetics i underlined the headers i think it's more appealing--*/
+h1 {
+  font-size: 28px;
+  font-family: arial,verdana, sans-serif;
+  font-weight: 400;
+text-decoration: underline;
+  color: #000000;
+}
+
+h2 {
+  font-size: 26px;
+  font-family: arial,verdana, sans-serif;
+  font-weight: 400;
+  text-decoration: underline;
+  margin: 0 10px;
+}
+h3{
+	font-size: 16px;
+	font-family: arial, verdana, sans-serif;
+	font-weight:400;
+	text-decoration: underline;
+}
+
+p {
+ font-family: arial, verdana, sans-serif;
+ line-height: 1.5em;
+ margin-bottom: 0;
+}
+
+main a {
+	font-weight: 700;
+	text-decoration: none;	
+}
+
+main  a:link { color: #38786a; }
+main  a:visited { color: darkgreen; }
+main  a:hover { color: darkred; }
+a:active { color: #ffffff; }
+
+
+a:hover {
+	text-decoration: none;	
+}
+
+footer p {
+  color: #000;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+
+main img {
+  width: 100%;
+}
+
+img.image-enhanced {
+  border-radius: 8px;
+}
+
+.group {
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+/* Contact Form Design */
+
+form {
+  padding-right: 10px;
+ 
+}
+
+form label {
+  display: block;
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+form textarea {
+  height: 200px;
+}
