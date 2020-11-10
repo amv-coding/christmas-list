@@ -6,13 +6,16 @@
 body {
     margin: 0;
     padding: 0;
-	background: linear-gradient(to left, #ff1a1a, #ffffff, #00b33c);
+	background: linear-gradient(45deg, #ff1a1a, #ffffff, #ff3333);
 }
 .group {
   display: flex;
   flex-direction: column;
 column-sppan: all;
 	text-align:center;
+}
+ul {
+color: ffd11a;
 }
 
 .item {
@@ -183,9 +186,10 @@ h1 {
   font-size: 28px;
   font-family: arial,verdana, sans-serif;
   font-weight: 400;
-text-decoration: underline;
+text-decoration: none;
   color: #000000;
 text-align:center;
+	color:#cca300;
 }
 
 h2 {
@@ -195,6 +199,7 @@ h2 {
   text-decoration: underline;
   margin: 0 10px;
 	text-align:center;
+	color: #cca300;
 }
 h3{
 	font-size: 16px;
@@ -202,12 +207,14 @@ h3{
 	font-weight:400;
 	text-decoration: underline;
 	text-align: center;
+	color: #cca300;
 }
 
 p {
  font-family: arial, verdana, sans-serif;
  line-height: 1.5em;
  margin-bottom: 0;
+	color:#ffcc00;
 }
 
 main a {
