@@ -34,7 +34,7 @@ color: white;
 	width:100%;
     justify-content: space-between;
     align-items: center;
-    background-color:darkred;
+    background-color:linear-gradient(45deg, #b30000,#006600);
     color: white;
 }
 
